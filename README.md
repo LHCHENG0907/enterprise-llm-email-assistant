@@ -24,21 +24,23 @@ The goal of this system is to improve communication efficiency and reduce the ri
 
 ---
 
-# System Architecture
+## System Architecture
+
+```
 User Interface
-│
-▼
+     │
+     ▼
 Email API / Outlook Integration
-│
-▼
+     │
+     ▼
 FastAPI Backend Service
-│
-▼
+     │
+     ▼
 LLM Reasoning Engine
-│
-├── Email Importance Classification
-├── AI Reply Generation
-└── Meeting Scheduling Support
+     ├── Email Importance Classification
+     ├── AI Reply Generation
+     └── Meeting Scheduling Support
+```
 
 
 The backend service processes email content and sends structured prompts to the LLM system to determine the importance of emails and generate reply suggestions.
